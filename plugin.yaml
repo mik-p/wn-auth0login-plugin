@@ -1,0 +1,6 @@
+plugin:
+    name: 'mikp.auth0login::lang.plugin.name'
+    description: 'mikp.auth0login::lang.plugin.description'
+    author: mik-p
+    icon: wn-icon-auth0
+    homepage: ''
