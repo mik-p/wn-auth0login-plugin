@@ -21,6 +21,6 @@
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "*",
         "guzzlehttp/guzzle": "^7.4",
-        "auth0/auth0-php": "^8.0.3"
+        "auth0/auth0-php": "^8.0"
     }
 }
