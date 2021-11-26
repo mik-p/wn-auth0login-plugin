@@ -20,6 +20,7 @@
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "*",
+        "guzzlehttp/psr7": "^2.1",
         "guzzlehttp/guzzle": "^7.4",
         "auth0/auth0-php": "^8.0"
     }
