@@ -8,7 +8,7 @@ class Plugin extends PluginBase
 {
     public $elevated = true;
 
-    public $require = ['Winter.User', 'Flynsarmy.SocialLogin'];
+    public $require = ['Winter.User', 'Flynsarmy.SocialLogin', 'mikp.openidconnect'];
 
     public function registerComponents()
     {

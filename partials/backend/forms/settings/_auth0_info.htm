@@ -4,8 +4,16 @@
         <h3>How to retrieve your credentials</h3>
     </div>
     <div class="content">
+        <p>This is an Auth0 specific handler using the OIDC protocol. You will need to setup an application with Auth0.
+        </p>
         <ol>
-            <li><b>Valid OAuth redirect URIs</b> to <span style="color:green">
+            <li>Go to <a target="_blanck"
+                    href="https://manage.auth0.com/dashboard">https://manage.auth0.com/dashboard</a> and
+                create a new application. Name it something like <strong>my-awesome-website</strong></li>
+            <li>Get the application's <b>Auth0 Domain</b></li>
+            <li>Get the application's <b>Client ID</b></li>
+            <li>Get the application's <b>Client Secret</b></li>
+            <li>Set the application's <b>Valid OAuth redirect URIs</b> to <span style="color:green">
                     <?= URL::route('flynsarmy_sociallogin_provider_callback', ['AuthZero']) ?>
                 </span></li>
         </ol>

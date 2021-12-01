@@ -33,13 +33,19 @@ class Auth0 extends SocialLoginProviderBase
             $this->adapter = new Auth0Provider(
                 @$providers['Auth0']['id_provider'],
                 @$providers['Auth0']['client_id'],
-                @$providers['Auth0']['client_secret'],
-                $this->callback
+                @$providers['Auth0']['client_secret']
             );
 
-            // $this->adapter->setVerifyHost(false);
-            // $this->adapter->setVerifyPeer(false);
-            // $this->adapter->setRedirectURL($this->callback);
+            $this->adapter->addScope('openid');
+            $this->adapter->addScope('profile');
+            $this->adapter->addScope('email');
+
+            $this->adapter->setRedirectURL($this->callback);
+
+            if (config('app.debug')) {
+                $this->adapter->setVerifyHost(false);
+                $this->adapter->setVerifyPeer(false);
+            }
             // $this->adapter->setCertPath('/path/to/my.cert');
         }
 
@@ -88,7 +94,7 @@ class Auth0 extends SocialLoginProviderBase
             ],
 
             'providers[Auth0][id_provider]' => [
-                'label' => 'ID Provider',
+                'label' => 'Auth0 Domain',
                 'type' => 'text',
                 'tab' => 'Auth0',
             ],
