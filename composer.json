@@ -1,6 +1,7 @@
 {
     "name": "mikp/wn-auth0login-plugin",
     "description": "Auth0 login extension to Social Login plugin",
+    "homepage": "https://github.com/mik-p/wn-auth0login-plugin",
     "type": "winter-plugin",
     "license": "MIT",
     "authors": [
@@ -25,9 +26,11 @@
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "dev-master",
-        "mikp/wn-openidconnect-plugin": "dev-master"
+        "mikp/wn-openidconnect-plugin": "dev-master",
+        "treeware/plant": "^0.1.0"
     },
     "extra": {
-        "installer-name": "auth0login"
+        "installer-name": "auth0login",
+        "treeware": {}
     }
 }
