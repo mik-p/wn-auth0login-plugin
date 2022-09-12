@@ -26,16 +26,9 @@
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "dev-master",
-        "mikp/wn-openidconnect-plugin": "dev-master",
-        "treeware/plant": "^0.1.0"
+        "mikp/wn-openidconnect-plugin": "dev-master"
     },
     "extra": {
-        "installer-name": "auth0login",
-        "treeware": {}
-    },
-    "config": {
-        "allow-plugins": {
-            "treeware/plant": true
-        }
+        "installer-name": "auth0login"
     }
 }
